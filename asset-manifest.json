@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goit-tech-project/static/css/main.ceb6a39b.css",
-    "main.js": "/goit-tech-project/static/js/main.e04b26ff.js",
-    "static/js/318.a19618e9.chunk.js": "/goit-tech-project/static/js/318.a19618e9.chunk.js",
-    "static/js/687.aa5636e8.chunk.js": "/goit-tech-project/static/js/687.aa5636e8.chunk.js",
-    "static/js/478.5249661e.chunk.js": "/goit-tech-project/static/js/478.5249661e.chunk.js",
+    "main.css": "/goit-tech-project/static/css/main.b74811ba.css",
+    "main.js": "/goit-tech-project/static/js/main.0e9eed2b.js",
+    "static/js/72.931a1a1f.chunk.js": "/goit-tech-project/static/js/72.931a1a1f.chunk.js",
+    "static/js/687.16f32e04.chunk.js": "/goit-tech-project/static/js/687.16f32e04.chunk.js",
+    "static/js/478.9a70e309.chunk.js": "/goit-tech-project/static/js/478.9a70e309.chunk.js",
     "static/js/787.6438957d.chunk.js": "/goit-tech-project/static/js/787.6438957d.chunk.js",
     "static/media/picture.png": "/goit-tech-project/static/media/picture.7c917f085e5473839d06.png",
     "static/media/elipse.png": "/goit-tech-project/static/media/elipse.d55d07bd1d2316de5be6.png",
     "index.html": "/goit-tech-project/index.html",
-    "main.ceb6a39b.css.map": "/goit-tech-project/static/css/main.ceb6a39b.css.map",
-    "main.e04b26ff.js.map": "/goit-tech-project/static/js/main.e04b26ff.js.map",
-    "318.a19618e9.chunk.js.map": "/goit-tech-project/static/js/318.a19618e9.chunk.js.map",
-    "687.aa5636e8.chunk.js.map": "/goit-tech-project/static/js/687.aa5636e8.chunk.js.map",
-    "478.5249661e.chunk.js.map": "/goit-tech-project/static/js/478.5249661e.chunk.js.map",
+    "main.b74811ba.css.map": "/goit-tech-project/static/css/main.b74811ba.css.map",
+    "main.0e9eed2b.js.map": "/goit-tech-project/static/js/main.0e9eed2b.js.map",
+    "72.931a1a1f.chunk.js.map": "/goit-tech-project/static/js/72.931a1a1f.chunk.js.map",
+    "687.16f32e04.chunk.js.map": "/goit-tech-project/static/js/687.16f32e04.chunk.js.map",
+    "478.9a70e309.chunk.js.map": "/goit-tech-project/static/js/478.9a70e309.chunk.js.map",
     "787.6438957d.chunk.js.map": "/goit-tech-project/static/js/787.6438957d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ceb6a39b.css",
-    "static/js/main.e04b26ff.js"
+    "static/css/main.b74811ba.css",
+    "static/js/main.0e9eed2b.js"
   ]
 }

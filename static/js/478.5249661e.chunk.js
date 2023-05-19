@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_tech_project=self.webpackChunkgoit_tech_project||[]).push([[478],{478:function(e,t,c){c.r(t);var n=c(184);t.default=function(){return(0,n.jsx)("div",{children:(0,n.jsx)("p",{children:"POSHEL NAXUI"})})}}}]);
-//# sourceMappingURL=478.5249661e.chunk.js.map
