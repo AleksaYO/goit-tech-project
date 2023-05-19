@@ -1,9 +1,6 @@
-import { lazy, useEffect } from "react";
+import { lazy } from "react";
 import "./App.css";
 import { Layout } from "./components/Layout/Layout";
-import { useDispatch, useSelector } from "react-redux";
-import { user } from "./redux/selectors";
-import { fetchCard } from "./redux/operations";
 import { Route, Routes } from "react-router-dom";
 import css from "./components/Main/Main.module.css";
 
@@ -12,15 +9,6 @@ const HomePage = lazy(() => import("./components/Home/HomePage"));
 const NotFound = lazy(() => import("./components/NotFlound/NotFound"));
 
 function App() {
-  const users = useSelector(user);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCard());
-  }, [dispatch]);
-
-  console.log(users);
-
   return (
     <div className={css.container}>
       <Routes>

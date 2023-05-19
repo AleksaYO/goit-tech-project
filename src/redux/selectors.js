@@ -1,1 +1,1 @@
-export const user = (state) => state;
+export const user = (state) => state.followers.followers;

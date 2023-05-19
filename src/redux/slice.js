@@ -1,17 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchCard } from "./operations";
 
-const userSclice = createSlice({
+export const userSclice = createSlice({
   name: "user",
-  initialState: [],
-  extraReducers: (builder) =>
-    builder.addCase(fetchCard.fulfilled, (state, { payload }) => {
-      console.log(payload);
-      state.push(...payload);
-    }),
+  initialState: {
+    followers: [],
+  },
+  reducers: {
+    followUser(state, { payload }) {
+      state.followers.push(payload);
+    },
+    unFollowUser(state, { payload }) {
+      state.followers = state.followers.filter(
+        (follower) => follower !== payload
+      );
+    },
+  },
 });
 
-export const userReduser = userSclice.reducer;
+export const { followUser, unFollowUser } = userSclice.actions;
 
 // {
 //       user: 'user',
