@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, useEffect } from "react";
+import "./App.css";
+import { Layout } from "./components/Layout/Layout";
+import { useDispatch, useSelector } from "react-redux";
+import { user } from "./redux/selectors";
+import { fetchCard } from "./redux/operations";
+import { Route, Routes } from "react-router-dom";
+import css from "./components/Main/Main.module.css";
+
+const Main = lazy(() => import("./components/Main/Main"));
+const HomePage = lazy(() => import("./components/Home/HomePage"));
 
 function App() {
+  const users = useSelector(user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCard());
+  }, [dispatch]);
+
+  console.log(users);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={css.container}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cards" element={<Main />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
