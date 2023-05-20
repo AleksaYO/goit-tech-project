@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/goit-tech-project/static/css/main.4af1bbed.css",
-    "main.js": "/goit-tech-project/static/js/main.d98b4966.js",
-    "static/js/296.d5aa9991.chunk.js": "/goit-tech-project/static/js/296.d5aa9991.chunk.js",
-    "static/css/356.8a9f0fe8.chunk.css": "/goit-tech-project/static/css/356.8a9f0fe8.chunk.css",
-    "static/js/356.f44912c4.chunk.js": "/goit-tech-project/static/js/356.f44912c4.chunk.js",
+    "main.css": "/goit-tech-project/static/css/main.200523d3.css",
+    "main.js": "/goit-tech-project/static/js/main.b49d49e5.js",
+    "static/css/309.1f6b9a40.chunk.css": "/goit-tech-project/static/css/309.1f6b9a40.chunk.css",
+    "static/js/309.806fd9fb.chunk.js": "/goit-tech-project/static/js/309.806fd9fb.chunk.js",
+    "static/css/356.b9431aee.chunk.css": "/goit-tech-project/static/css/356.b9431aee.chunk.css",
+    "static/js/356.9d3d27c6.chunk.js": "/goit-tech-project/static/js/356.9d3d27c6.chunk.js",
     "static/js/478.9a70e309.chunk.js": "/goit-tech-project/static/js/478.9a70e309.chunk.js",
     "static/js/787.6438957d.chunk.js": "/goit-tech-project/static/js/787.6438957d.chunk.js",
     "static/media/picture.png": "/goit-tech-project/static/media/picture.7c917f085e5473839d06.png",
     "static/media/elipse.png": "/goit-tech-project/static/media/elipse.d55d07bd1d2316de5be6.png",
     "index.html": "/goit-tech-project/index.html",
-    "main.4af1bbed.css.map": "/goit-tech-project/static/css/main.4af1bbed.css.map",
-    "main.d98b4966.js.map": "/goit-tech-project/static/js/main.d98b4966.js.map",
-    "296.d5aa9991.chunk.js.map": "/goit-tech-project/static/js/296.d5aa9991.chunk.js.map",
-    "356.8a9f0fe8.chunk.css.map": "/goit-tech-project/static/css/356.8a9f0fe8.chunk.css.map",
-    "356.f44912c4.chunk.js.map": "/goit-tech-project/static/js/356.f44912c4.chunk.js.map",
+    "main.200523d3.css.map": "/goit-tech-project/static/css/main.200523d3.css.map",
+    "main.b49d49e5.js.map": "/goit-tech-project/static/js/main.b49d49e5.js.map",
+    "309.1f6b9a40.chunk.css.map": "/goit-tech-project/static/css/309.1f6b9a40.chunk.css.map",
+    "309.806fd9fb.chunk.js.map": "/goit-tech-project/static/js/309.806fd9fb.chunk.js.map",
+    "356.b9431aee.chunk.css.map": "/goit-tech-project/static/css/356.b9431aee.chunk.css.map",
+    "356.9d3d27c6.chunk.js.map": "/goit-tech-project/static/js/356.9d3d27c6.chunk.js.map",
     "478.9a70e309.chunk.js.map": "/goit-tech-project/static/js/478.9a70e309.chunk.js.map",
     "787.6438957d.chunk.js.map": "/goit-tech-project/static/js/787.6438957d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af1bbed.css",
-    "static/js/main.d98b4966.js"
+    "static/css/main.200523d3.css",
+    "static/js/main.b49d49e5.js"
   ]
 }
