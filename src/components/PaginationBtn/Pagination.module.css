@@ -1,0 +1,92 @@
+.pagination-box {
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-next-page {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.btn-next-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #5cd3a8;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-next-page:hover {
+  color: #fff;
+}
+
+.btn-next-page:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.btn-previous-page {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.btn-previous-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #5cd3a8;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-previous-page:hover {
+  color: #fff;
+}
+
+.btn-previous-page:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}

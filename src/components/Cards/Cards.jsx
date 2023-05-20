@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { followUser, unFollowUser } from "../../redux/slice";
 import { useFollowUserMutation } from "../../redux/userApi";
-import css from "../Main/Main.module.css";
+import css from "./Cards.module.css";
 import { user } from "../../redux/selectors";
 
 export const Cards = ({ user: { id, avatar, tweets, followers } }) => {

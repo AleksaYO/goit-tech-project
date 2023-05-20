@@ -8,7 +8,11 @@ export const userApi = createApi({
   tagTypes: ["Followers"],
   endpoints: (builder) => ({
     getUsers: builder.query({
-      query: () => "/user",
+      query: (page = 1) => `/user?limit=6&page=${page}`,
+      providesTags: ["Followers"],
+    }),
+    followingUsers: builder.query({
+      query: (id) => `/user/${id}`,
       providesTags: ["Followers"],
     }),
     followUser: builder.mutation({
@@ -22,4 +26,8 @@ export const userApi = createApi({
   }),
 });
 
-export const { useGetUsersQuery, useFollowUserMutation } = userApi;
+export const {
+  useGetUsersQuery,
+  useFollowUserMutation,
+  useFollowingUsersQuery,
+} = userApi;

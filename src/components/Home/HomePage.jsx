@@ -7,7 +7,7 @@ const HomePage = () => {
       <p>This is home page</p>
       <p>To see all users, click on the button</p>
       <Link to="/cards">
-        <button>
+        <button className={css.btn}>
           <span>CARDS</span>
         </button>
       </Link>

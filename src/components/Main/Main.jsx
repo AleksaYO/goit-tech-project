@@ -5,15 +5,20 @@ import { Link } from "react-router-dom";
 import { PaginationBtn } from "../PaginationBtn/PagintationBtn";
 import { useState } from "react";
 
+const PAGE = 1;
+const TOTAL_PAGE = Math.ceil(20 / 6);
+
 const Main = () => {
-  let { data = [] } = useGetUsersQuery();
-  const itemsPerPage = 9;
-  const [loadedItems, setLoadedItems] = useState(itemsPerPage);
+  const [page, setPage] = useState(PAGE);
+  let { data = [] } = useGetUsersQuery(page);
 
-  const currentData = data.slice(0, loadedItems);
-
-  const nexUsers = () => {
-    setLoadedItems(loadedItems + itemsPerPage);
+  const nextPage = () => {
+    if (page === TOTAL_PAGE) return;
+    else setPage((prev) => prev + 1);
+  };
+  const prevPage = () => {
+    if (page === 1) return;
+    else setPage((prev) => prev - 1);
   };
 
   return (
@@ -30,16 +35,15 @@ const Main = () => {
           <button className={css["btn-back"]}>Following</button>
         </div>
       </div>
-      {currentData && (
-        <>
-          <ul className={css.list}>
-            {currentData.map((item) => {
-              return <Cards key={item.id} user={item} />;
-            })}
-          </ul>
-          {data.length > loadedItems && <PaginationBtn nexUsers={nexUsers} />}
-        </>
-      )}
+
+      <>
+        <ul className={css.list}>
+          {data.map((item) => {
+            return <Cards key={item.id} user={item} />;
+          })}
+        </ul>
+        <PaginationBtn prevPage={prevPage} nextPage={nextPage} />
+      </>
     </>
   );
 };

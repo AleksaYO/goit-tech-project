@@ -7,7 +7,7 @@ import App from "./App";
 import "./index.css";
 import { persistor, store } from "./redux/store";
 import reportWebVitals from "./reportWebVitals";
-import "./background.js";
+import "./background";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

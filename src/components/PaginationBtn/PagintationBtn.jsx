@@ -1,9 +1,14 @@
-import css from "../Main/Main.module.css";
+import css from "./Pagination.module.css";
 
-export const PaginationBtn = ({ nexUsers }) => {
+export const PaginationBtn = ({ prevPage, nextPage, data }) => {
   return (
-    <button onClick={nexUsers} className={css["btn-load-more"]}>
-      Load More
-    </button>
+    <div className={css["pagination-box"]}>
+      <button onClick={prevPage} className={css["btn-previous-page"]}>
+        PREV PAGE
+      </button>
+      <button onClick={nextPage} className={css["btn-next-page"]}>
+        NEXT PAGE
+      </button>
+    </div>
   );
 };
