@@ -7,10 +7,20 @@
   width: 100%;
 }
 
+.header {
+  display: flex;
+}
+
+.filter {
+  margin-left: auto;
+  margin-right: 50px;
+}
 .container {
   width: 1280px;
   padding: 15px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -19,6 +29,7 @@
   height: 404px;
   list-style: none;
   padding: 20px 20px 36px 20px;
+  font-family: Montserrat;
 
   display: flex;
   flex-direction: column;
@@ -120,7 +131,6 @@
   border-radius: 10px;
   background-color: #ebd8ff;
   transition: background-color, 250ms, linear;
-  cursor: pointer;
 }
 .btn-unfollow {
   padding: 14px 28px 14px 28px;
@@ -133,5 +143,89 @@
   border-radius: 10px;
   background-color: #5cd3a8;
   transition: background-color, 250ms, linear;
-  cursor: pointer;
+}
+
+.btn-back {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 140px;
+  margin-bottom: 30px;
+  margin-left: 7px;
+  text-transform: uppercase;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.btn-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #5cd3a8;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-back:hover {
+  color: #fff;
+}
+
+.btn-back:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.btn-load-more {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.btn-load-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #5cd3a8;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-load-more:hover {
+  color: #fff;
+}
+
+.btn-load-more:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }

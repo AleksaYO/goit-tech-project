@@ -10,15 +10,15 @@ import reportWebVitals from "./reportWebVitals";
 import "./background.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
-  <Provider store={store}>
-    <PersistGate persistor={persistor}>
-      <BrowserRouter basename="goit-tech-project">
-        <App />
-      </BrowserRouter>
-    </PersistGate>
-  </Provider>
-  // {/* </React.StrictMode> */}
+  <React.StrictMode>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <BrowserRouter basename="goit-tech-project">
+          <App />
+        </BrowserRouter>
+      </PersistGate>
+    </Provider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
