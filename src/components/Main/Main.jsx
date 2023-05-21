@@ -6,6 +6,7 @@ import { PaginationBtn } from "../PaginationBtn/PagintationBtn";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { user } from "../../redux/selectors";
+import { Loader } from "../Loader/Loader";
 
 let LIMIT = 6;
 
@@ -16,8 +17,7 @@ const Main = () => {
   const followingUsers = useSelector(user);
 
   const nextPage = () => {
-    if (LIMIT === 20) return;
-    else setLimit((prev) => prev + 6);
+    setLimit((prev) => prev + 6);
   };
 
   const filteredUsers = (flag) => {
@@ -38,44 +38,52 @@ const Main = () => {
 
   return (
     <>
-      <div className={css["header"]}>
-        <Link to="/">
-          <button className={css["btn-back"]}>
-            <span>GO BACK</span>
-          </button>
-        </Link>
-        {data.length === 20 && (
-          <div className={css["filter"]}>
-            <button
-              onClick={() => filteredUsers("all")}
-              className={css["btn-back"]}
-            >
-              All
-            </button>
-            <button
-              onClick={() => filteredUsers("follow")}
-              className={css["btn-back"]}
-            >
-              Follow
-            </button>
-            <button
-              onClick={() => filteredUsers("following")}
-              className={css["btn-back"]}
-            >
-              Following
-            </button>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <div className={css["header"]}>
+            <Link to="/">
+              <button className={css["btn-back"]}>
+                <span>GO BACK</span>
+              </button>
+            </Link>
+            {data.length === 20 && (
+              <div className={css["filter"]}>
+                <button
+                  onClick={() => filteredUsers("all")}
+                  className={css["btn-back"]}
+                >
+                  All
+                </button>
+                <button
+                  onClick={() => filteredUsers("follow")}
+                  className={css["btn-back"]}
+                >
+                  Follow
+                </button>
+                <button
+                  onClick={() => filteredUsers("following")}
+                  className={css["btn-back"]}
+                >
+                  Following
+                </button>
+              </div>
+            )}
           </div>
-        )}
-      </div>
 
-      <>
-        <ul className={css.list}>
-          {users.map((item) => {
-            return <Cards key={item.id} user={item} />;
-          })}
-        </ul>
-        {data.length !== 20 && <PaginationBtn nextPage={nextPage} />}
-      </>
+          <>
+            <ul className={css.list}>
+              {users.map((item) => {
+                return <Cards key={item.id} user={item} />;
+              })}
+            </ul>
+            {data.length !== 20 && (
+              <PaginationBtn isLoading={isLoading} nextPage={nextPage} />
+            )}
+          </>
+        </>
+      )}
     </>
   );
 };

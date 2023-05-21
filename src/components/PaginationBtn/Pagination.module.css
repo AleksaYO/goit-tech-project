@@ -37,6 +37,9 @@ span {
   z-index: -1;
   transition: all 0.5s;
 }
+.btn-next-page:disabled::before {
+  background-color: black;
+}
 
 .btn-next-page:hover {
   color: #fff;
