@@ -1,10 +1,5 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
@@ -17,8 +12,12 @@ button {
 }
 
 body {
-  position: sticky;
-  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   margin: 0;
   --x: calc(var(--posX, 0) * 1px);
   --y: calc(var(--posY, 0) * 1px);
@@ -29,7 +28,7 @@ body {
       rgb(022 000 045)
     ),
     radial-gradient(
-      100% 100% at calc(80% - var(--x)) calc(0% - var(--y)),
+      100% 100% at calc(80% - var(--x)),
       rgb(250 255 000),
       rgb(036 000 000)
     ),

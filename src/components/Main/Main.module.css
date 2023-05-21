@@ -58,8 +58,18 @@ span {
 .btn-back:hover {
   color: #fff;
 }
+.btn-back:focus {
+  color: #fff;
+}
 
 .btn-back:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.btn-back:focus::before {
+  transition: all 0.5s;
+  background: #5cd3a8;
   left: 0;
   right: 0;
   opacity: 1;
