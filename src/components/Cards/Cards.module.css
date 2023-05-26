@@ -108,6 +108,25 @@
   transition: background-color, 250ms, linear;
   transform: skew(0deg);
 }
+.btn-follow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  border-radius: 10px;
+  left: 0;
+  background: #5cd3a8;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.btn-follow:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
 .btn-unfollow {
   padding: 14px 28px 14px 28px;
   width: 196px;
